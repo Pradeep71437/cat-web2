@@ -152,10 +152,12 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(32, 32, 34, 0.9)), url(../img/bg-hero2.jpg);
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(../img/bg-hero2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
 }
 
 .hero-header img {
