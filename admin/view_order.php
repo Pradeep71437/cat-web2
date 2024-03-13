@@ -60,7 +60,14 @@ if (isset($_GET['id'])) {
 </head>
 
 <body>
-        <style>
+<div class="container">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0 text-center m-4" >P.K.M Catering</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a><br>
+        <h1 class="text-center">Order Details</h1>
+    </div>
+<style>
     table{
         margin-top:20px
     }
@@ -72,17 +79,9 @@ if (isset($_GET['id'])) {
         color: black
     }
     </style>
-<div id="pdfTable">
-<div class="container">
-        <a href="" class="navbar-brand p-0">
-            <h1 class="text-primary m-0 text-center m-4" >P.K.M Catering</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
-        </a><br>
-        <h1 class="text-center">Order Details</h1>
-    </div>
     <div class="container orders-table">
 
-        <table class="table table-bordered" >
+        <table class="table table-bordered" id="pdfTable">
             <tr>
                 <th style="color: black">Customer Name :</th>
                 <td><?= $row['user_name'] ?></td>
@@ -121,19 +120,18 @@ if (isset($_GET['id'])) {
             <th style="color: black">Total Guests :</th>
             <td><?= $row['total_guests'] ?></td>
             <td></td>
+
             </tr>
 
             <tr>
             <th style="color: black">Breakfast :</th>
             <td><?php echo implode(', ', $breakfast); ?></td>
-            <td></td>
             <td>Amount :  ₹ <input type="number" id="f1"  oninput="calculateTotal()" required></td>
             </tr>
 
             <tr>
             <th style="color: black">Lunch :</th>
             <td><?php echo implode(', ', $lunch); ?></td>
-            <td></td>
             <td>Amount :  ₹ <input type="number" id="f2" oninput="calculateTotal()" required></td>
 
             </tr>
@@ -141,7 +139,6 @@ if (isset($_GET['id'])) {
             <tr>
             <th style="color: black">Dinner:</th>
             <td><?php echo implode(', ', $dinner); ?></td>
-            <td></td>
             <td>Amount :  ₹ <input type="number" id="f3" oninput="calculateTotal()" required></td>
 
             </tr>
@@ -149,7 +146,6 @@ if (isset($_GET['id'])) {
             <tr>
                 <th></th>
                 <td></td>
-                <td>Count</td>
                 <td>
                     Total: ₹ <span id="total" style="color: green"></span>
                 </td>
@@ -160,7 +156,6 @@ if (isset($_GET['id'])) {
         </div>
      
     </div>
-</div>
 </body>
 
 <script>
