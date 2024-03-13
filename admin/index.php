@@ -37,7 +37,7 @@ $result = mysqli_query($conn, "SELECT * FROM orders");
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
-   <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style2.css">
 </head>
 <body>
     <div class="container">
@@ -47,7 +47,7 @@ $result = mysqli_query($conn, "SELECT * FROM orders");
         </a><br>
         <h1 class="text-center">Orders</h1>
     </div>
-    <div class="container orders ">
+    <div class="container orders">
     <?php
         // Loop through each order and create a neworder div
         while ($row = mysqli_fetch_assoc($result)) {
