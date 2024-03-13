@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown with Select All Checkbox</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="col-12 mt-4 align-items-center justify-content-center">
+            <div class="dropdown">
+                <input type="button" class="btn btn-primary form-control dropdown-toggle" style="color: black;" value="Breakfast" data-bs-toggle="dropdown">
+    
+                <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="px-3">CATEGORY 1</h6>
+                            <li class="px-3 m-2">
+                                <input type="checkbox" style="color: black;" class="select-all" onchange="checkAll(this)" /> 
+                                <label>Select All</label>
+                            </li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Ashoka alwa"> Ashoka alwa</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Aval Kesari"> Aval Kesari</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+    
+                        </div>
+                        <div class="col-sm-4">
+                            <h6 class="px-3">CATEGORY 1</h6>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Ashoka alwa"> Ashoka alwa</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Aval Kesari"> Aval Kesari</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                        </div>
+                        <div class="col-sm-4">
+                            <h6 class="px-3">CATEGORY 1</h6>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Ashoka alwa"> Ashoka alwa</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Aval Kesari"> Aval Kesari</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="col-12 mt-4 align-items-center justify-content-center">
+            <div class="dropdown">
+                <input type="button" class="btn btn-primary form-control dropdown-toggle" style="color: black;" value="Breakfast" data-bs-toggle="dropdown">
+    
+                <ul class="dropdown-menu" style="height: 250px; width: 100%; overflow: auto;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h6 class="px-3">CATEGORY 1</h6>
+                            <li class="px-3 m-2">
+                                <input type="checkbox" style="color: black;" class="select-all" onchange="checkAll(this)"> 
+                                <label>Select All</label>
+                            </li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Ashoka alwa"> Ashoka alwa</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Aval Kesari"> Aval Kesari</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                        </div>
+                        <div class="col-sm-4">
+                            <h6 class="px-3">CATEGORY 2</h6>
+                        
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Ashoka alwa"> Ashoka alwa</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Aval Kesari"> Aval Kesari</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                        </div>
+                        <div class="col-sm-4">
+                            <h6 class="px-3">CATEGORY 3</h6>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Ashoka alwa"> Ashoka alwa</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Aval Kesari"> Aval Kesari</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                            <li class="px-3 m-2"><input type="checkbox" style="color: black;" name="breakfast[]" value="Pineapple Milk Pudding"> Pineapple Milk Pudding</li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function checkAll(myCheckbox) {
+        var checkboxes = document.querySelectorAll('.dropdown-menu input[type="checkbox"]');
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = myCheckbox.checked;
+        });
+    }
+    </script>
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function checkAll(myCheckbox) {
+        var checkboxes = myCheckbox.parentNode.parentNode.querySelectorAll(".dropdown-menu input[type='checkbox']");
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = myCheckbox.checked;
+        });
+    }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
