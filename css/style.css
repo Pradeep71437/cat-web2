@@ -69,6 +69,15 @@
     height: 48px;
 }
 
+.btn-lg-circle2{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -152,23 +161,15 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(../img/bg-hero2.jpg);
+    background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(0, 0, 0, 0.9)), url(/img/bg-hero.jpg);
+   
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
-    background-attachment: fixed;
 }
 
-.hero-header img {
-    animation: imgRotate 50s linear infinite;
-}
 
-@keyframes imgRotate { 
-    100% { 
-        transform: rotate(360deg); 
-    } 
-}
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
@@ -478,4 +479,161 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+/*** Pricing Start ***/
+.pricing {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/about-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing .pricing-item {
+    color: var(--bs-white);
+}
+
+.pricing .pricing-item .pricing-content {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.pricing .owl-carousel.pricing-carousel {
+    position: relative;
+}
+
+.pricing .owl-carousel.pricing-carousel .owl-nav {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    display: flex;
+    font-size: 40px;
+    color: var(--bs-white);
+
+}
+
+.pricing .owl-carousel.pricing-carousel .owl-nav .owl-prev {
+    margin-right: 40px;
+}
+
+.pricing .owl-carousel.pricing-carousel .owl-nav .owl-prev,
+.pricing .owl-carousel.pricing-carousel .owl-nav .owl-next {
+    transition: 0.5s;
+}
+
+.pricing .owl-carousel.pricing-carousel .owl-nav .owl-prev:hover,
+.pricing .owl-carousel.pricing-carousel .owl-nav .owl-next:hover {
+    color: var(--bs-primary);
+}
+/*** Pricing End ***/
+
+.toggle-button {
+    display: flex; /* Display items in a row */
+    align-items: center; /* Align items vertically */
+}
+
+.label-left {
+    margin-right: 2px; /* Adjust the space between the left label and the toggle */
+}
+
+.label-right {
+    margin-left: 5px; /* Adjust the space between the toggle and the right label */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 5px; /* Adjust the space between the toggle and the right label */
+}
+
+.switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input[type="checkbox"]:checked + .slider {
+    background-color: #f3e521;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+  @media (min-width: 992px){
+    .toggle-button{
+        padding-left: 25%;
+    }
+  }
+  .line{
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 150px;
+    background-color: black;
+}
+.orders{
+    /* border: 1px solid black; */
+justify-content: center ;
+}
+body{
+    background-color: white;
+}
+.neworder{
+    border: 1px solid orangered;
+    background-color: rgb(241, 90, 35);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.gpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white{
+    color: whitesmoke;
+}
+.view{
+color: whitesmoke;
+border: 2px solid whitesmoke;
+padding: 5px 15px;
+font-size: 22px;
+margin: 30px;
+margin-left: auto;
+}
+.view:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.download{
+    margin-bottom: 20px;
 }

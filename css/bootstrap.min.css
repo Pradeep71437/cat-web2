@@ -3083,7 +3083,13 @@ fieldset:disabled .btn {
 .btn-primary {
     color: #000;
     background-color: #FEA116;
+<<<<<<< HEAD
     border-color: #FEA116
+=======
+    border-color: #FEA116;
+    /* border-radius: 30px; */
+
+>>>>>>> 33310ba5d6b811d4ce27f7f5eae6729c0a2d2e24
 }
 
 .btn-primary:hover {
@@ -8285,11 +8291,19 @@ fieldset:disabled .btn {
 
 .text-break {
     word-wrap: break-word !important;
+<<<<<<< HEAD
     word-break: break-word !important
+=======
+    word-break: break-word !important;
+>>>>>>> 33310ba5d6b811d4ce27f7f5eae6729c0a2d2e24
 }
 
 .text-primary {
     color: #FEA116 !important
+<<<<<<< HEAD
+=======
+    /* color: rgb(95, 255, 32) !important; */
+>>>>>>> 33310ba5d6b811d4ce27f7f5eae6729c0a2d2e24
 }
 
 .text-secondary {
@@ -8373,7 +8387,11 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
+<<<<<<< HEAD
     background-color: #070b15 !important
+=======
+    background-color: #0F172B !important
+>>>>>>> 33310ba5d6b811d4ce27f7f5eae6729c0a2d2e24
 }
 
 .bg-body {
@@ -12536,4 +12554,10 @@ fieldset:disabled .btn {
     .d-print-none {
         display: none !important
     }
+<<<<<<< HEAD
+=======
+}
+.text-orange{
+    color: orange;
+>>>>>>> 33310ba5d6b811d4ce27f7f5eae6729c0a2d2e24
 }
