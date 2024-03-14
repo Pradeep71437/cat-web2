@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .message-box{
     background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(10, 10, 10, 0.9)), url(../img/bg-hero2.jpg);
     background-position: center center;
@@ -14,4 +15,56 @@
     justify-content: center;
     display: flex;
     /* color: rgb(20, 20, 20); */
+<<<<<<< HEAD
+=======
+=======
+.line{
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 150px;
+    background-color: black;
+}
+.orders{
+    /* border: 1px solid black; */
+justify-content: center ;
+}
+body{
+    background-color: white;
+}
+.neworder{
+    border: 1px solid orangered;
+    background-color: rgb(241, 90, 35);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.gpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white{
+    color: whitesmoke;
+}
+.view{
+color: whitesmoke;
+border: 2px solid whitesmoke;
+padding: 5px 15px;
+font-size: 22px;
+margin: 30px;
+margin-left: auto;
+}
+.view:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.download{
+    margin-bottom: 20px;
+>>>>>>> 33310ba5d6b811d4ce27f7f5eae6729c0a2d2e24
+>>>>>>> 3c46156ca39f8b4e2d8fcb72a054a1c3816e24bc
 }
